@@ -5,13 +5,13 @@ export default function ComParametro(props) {
   const notaInt = Math.ceil(props.nota)
   return (
     <div>
-      <h2>{ props.titulo }</h2>
+      <h2>{props.titulo}</h2>
       <p>
-        <strong>{ props.aluno } </strong>
+        <strong>{props.aluno} </strong>
         tem nota
-        <strong> { notaInt } </strong>
+        <strong> {notaInt} </strong>
         e está
-        <strong> { status }</strong>
+        <strong> {status}</strong>
       </p>
     </div>
   )
