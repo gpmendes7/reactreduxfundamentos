@@ -10,5 +10,9 @@ export default (props) => {
     );
   });
 
-  return <div>{alunosLI}</div>;
+  return (
+    <div>
+      <ul style={{ listStyle: "none" }}>{alunosLI}</ul>
+    </div>
+  );
 };
