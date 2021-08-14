@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../../views/examples/Home";
 import About from "../../views/examples/About";
 import Param from "../../views/examples/Param";
+import NotFound from "../../views/examples/NotFound";
 
 const Content = (props) => (
   <main className="Content">
@@ -17,6 +18,9 @@ const Content = (props) => (
       </Route>
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/*">
+        <NotFound />
       </Route>
     </Switch>
   </main>
