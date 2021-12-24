@@ -27,6 +27,7 @@ export default function Inicio() {
         destino="/integracao_1"
         cor="#42a9a9"
       />
+      <Navegador texto="Conteúdo Estático" destino="/estatico" cor="#faa9a9" />
     </div>
   );
 }
