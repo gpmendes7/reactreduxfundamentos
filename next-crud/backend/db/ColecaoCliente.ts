@@ -1,4 +1,5 @@
 import firebase from "../config";
+import "firebase/compat/firestore";
 import Cliente from "../../src/core/Cliente";
 import ClienteRepositorio from "../../src/core/ClienteRepositorio";
 
@@ -11,7 +12,7 @@ export default class ColecaoCliente implements ClienteRepositorio {
       };
     },
     fromFirestore(
-      snapshot: firebase.firestore.QueryDocumentShapShot,
+      snapshot: firebase.firestore.QueryDocumentSnapshot,
       options: firebase.firestore.SnapshotOptions
     ): Cliente {
       const dados = snapshot.data(options);

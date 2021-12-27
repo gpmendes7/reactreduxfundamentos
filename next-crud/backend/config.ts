@@ -1,11 +1,13 @@
-import firebase from "firebase";
-import "firebase/firestore";
+import firebase from "firebase/compat/app";
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    apiKey: "AIzaSyDw3KhwxArGOZn0nWskOIGAF8XuK-SI7lg",
+    authDomain: "next-crud-76942.firebaseapp.com",
+    projectId: "next-crud-76942",
+    storageBucket: "next-crud-76942.appspot.com",
+    messagingSenderId: "1072519509682",
+    appId: "1:1072519509682:web:864155f3a67eb2086f7bab",
   });
 }
 
