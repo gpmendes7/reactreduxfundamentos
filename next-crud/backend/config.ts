@@ -1,5 +1,7 @@
 import firebase from "firebase/compat/app";
 
+// substititur por variáveis de ambiente
+// colocar valores conforme configuração do firebase
 if (!firebase.apps.length) {
   firebase.initializeApp({
     apiKey: "AIzaSyDw3KhwxArGOZn0nWskOIGAF8XuK-SI7lg",
